@@ -2,7 +2,7 @@ var bg,bg2,form,system,code,security;
 var score=0;
 
 function preload() {
-  bg = loadImage("fairyland2.jpg");
+  bg = loadImage("fl3.webp");
   bg2 = loadImage("castle.webp")
 }
 
@@ -16,16 +16,16 @@ function draw() {
   background(bg);
   clues();
   security.display();
-  textSize(20);
+  textSize(30);
   fill("white");
   text("Score: " + score, 450, 50);
 
   if(score === 3) {
     clear()
     background(bg2)
-    fill("black")
+    fill("purple")
     textSize(40);
-    text("You can enter the castle",250, 200);
+    text("!!You can enter the castle!!",250, 200);
   }
 
   drawSprites()
